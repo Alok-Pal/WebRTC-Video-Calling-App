@@ -21,6 +21,31 @@ This project implements a **WebRTC**-based video calling application where users
 - **Express.js** - Web framework to handle routing and middleware.
 - **HTML5/CSS3/JavaScript** - Frontend technologies for the user interface and WebRTC logic.
 
+## How to Use
+
+1. **Create a Room**:
+   - Enter your **email** and a **unique room name**.
+   - Click **Join Room** to create and enter the room.
+
+2. **Share the Room**:
+   - After joining the room, you can share the room link with the second person.
+   - The second person needs to enter the **same room name** and their **email**.
+
+3. **Start the Call**:
+   - Once both users are in the room, the video call will be automatically initiated.
+
+4. **End the Call**:
+   - Either user can click the **End Call** button or close the browser window to end the call.
+
+
+## WebRTC Flow (P2P Connection)
+
+1. **User 1** enters the room, and a signaling message is sent to the server.
+2. **User 2** enters the same room, and the signaling messages are exchanged via **Socket.IO**.
+3. **ICE Candidates** are gathered by WebRTC and exchanged to establish the peer-to-peer connection.
+4. Once the signaling and ICE candidates are exchanged, the **P2P connection** is established, and both users can see and hear each other.
+
+
 ## Setup and Installation
 
 1. **Clone the Repository**
