@@ -30,7 +30,7 @@ const LobbyScreen = () => {
   },[handleJoinRoom, socket])
 
   return (
-    <div className="flex justify-center items-center h-screen ">
+    <div className="flex justify-end items-center h-screen bgImage pe-52 pt-52">
       <div className="w-72">
         <form
           onSubmit={(e) => {

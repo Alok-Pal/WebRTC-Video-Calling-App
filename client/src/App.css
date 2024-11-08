@@ -32,7 +32,15 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.bgImage {
+  background: url('http://localhost:3001/Vimg.png') no-repeat center center;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  width: 100vw;           /* Full viewport width */
+  height: 100vh;          /* Full viewport height */
 }
