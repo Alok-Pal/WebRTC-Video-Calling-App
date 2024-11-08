@@ -39,7 +39,7 @@
 }
 
 .bgImage {
-  background: url('http://localhost:3001/Vimg.png') no-repeat center center;
+  background: url('https://video-calling-chi.vercel.app/Vimg.png') no-repeat center center;
   background-size: cover; /* Ensures the image covers the entire screen */
   width: 100vw;           /* Full viewport width */
   height: 100vh;          /* Full viewport height */
